@@ -56,3 +56,18 @@ console.log("I am " + age + " years old.");
 let cgpa = 3.75;
 console.log("My CGPA is " + cgpa);
 
+// typeof 
+// to know the data type of a variable
+console.log(typeof FirstName);
+console.log(typeof age);
+
+
+let isGoogleEmployee = false;
+let goalisBecomeAGoogleEmployee = true;
+console.log(isGoogleEmployee);
+console.log(goalisBecomeAGoogleEmployee);
+
+let a = 20 > 14; // will return true
+// its a boolean data type
+console.log(typeof a);
+console.log(a);

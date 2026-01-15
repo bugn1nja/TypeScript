@@ -1,2 +1,1 @@
-console.log("Mujaddid you can do this .");
-console.log("Keep pushing forward!");
+console.log("It's the mai js file of my journy....");
