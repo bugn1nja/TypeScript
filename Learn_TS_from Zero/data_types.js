@@ -48,7 +48,11 @@
 // below are some prectice examples by me
 
 let FirstName = "Mujaddid";
-console.log("Hello, " + FirstName);
+console.log("Hello, My name is : " + FirstName);
 
 let age = 25;
 console.log("I am " + age + " years old.");
+
+let cgpa = 3.75;
+console.log("My CGPA is " + cgpa);
+
