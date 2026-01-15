@@ -48,24 +48,25 @@
 // below are some prectice examples by me
 
 let FirstName = "Mujaddid";
-console.log("Hello, My name is : " + FirstName);
+console.log("Hello, My name is : " + FirstName); //will print Hello, My name is : Mujaddid
 
 let age = 25;
-console.log("I am " + age + " years old.");
+console.log("I am " + age + " years old."); //will print I am 25 years old.
 
 let cgpa = 3.75;
-console.log("My CGPA is " + cgpa);
+console.log("My CGPA is " + cgpa); //will print My CGPA is 3.75
 
 // typeof 
 // to know the data type of a variable
-console.log(typeof FirstName);
-console.log(typeof age);
+console.log(typeof FirstName); //will print string
+console.log(typeof age);//will print number
+console.log(typeof cgpa);//will print number
 
 
 let isGoogleEmployee = false;
 let goalisBecomeAGoogleEmployee = true;
-console.log(isGoogleEmployee);
-console.log(goalisBecomeAGoogleEmployee);
+console.log(isGoogleEmployee); //will print false
+console.log(goalisBecomeAGoogleEmployee); //will print true
 
 let a = 20 > 14; // will return true
 // its a boolean data type
