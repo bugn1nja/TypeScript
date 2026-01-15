@@ -72,3 +72,11 @@ let a = 20 > 14; // will return true
 // its a boolean data type
 console.log(typeof a);
 console.log(a);
+
+let b; // will return undefined
+console.log(typeof b);
+console.log(b); //will print undefined
+
+let c = null; // will return object
+console.log(typeof c);
+console.log(c); //will print null
