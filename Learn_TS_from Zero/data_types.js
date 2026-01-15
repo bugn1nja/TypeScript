@@ -44,4 +44,11 @@
 // In JavaScript, data types are determined dynamically at runtime.
 
 // all the examples above are created using Ai
+// ..............................................................................................................
+// below are some prectice examples by me
 
+let FirstName = "Mujaddid";
+console.log("Hello, " + FirstName);
+
+let age = 25;
+console.log("I am " + age + " years old.");
