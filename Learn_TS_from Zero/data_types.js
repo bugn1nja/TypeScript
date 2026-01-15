@@ -80,3 +80,54 @@ console.log(b); //will print undefined
 let c = null; // will return object
 console.log(typeof c);
 console.log(c); //will print null
+
+//what is object data type
+// object data type is a complex data type that allows you to store collections of data and more complex entities.
+// Objects are used to represent real-world entities and can contain multiple properties and methods.
+
+let person = {}; // empty object
+console.log(typeof person); //will print object
+console.log(person); //will print {}
+
+person.name = "Mujaddid";
+person.age = 25;
+console.log(person); //will print { name: 'Mujaddid', age: 25 }
+
+// 2nd way to create object
+
+let student = {
+    name : "Mujaddid",
+    age : 25,
+    cgpa : 3.75
+};
+console.log(student); //will print { name: 'Mujaddid', age: 25, cgpa: 3.75 }
+
+// Array data type
+// array is a special type of object that is used to store multiple values in a single variable.
+
+let numbers = [1, 2, 3, 4, 'Mujaddid', 5];
+console.log(typeof numbers); //will print object
+console.log(numbers); //will print [ 1, 2, 3, 4, 'Mujaddid', 5 ]
+
+// Function data type
+// function is a block of code that performs a specific task.
+
+function greet() {
+    console.log("Hello, Welcome to my TypeScript journey!");
+}
+greet(); 
+// we will write the function name to call the function, in this case its greet()
+//will print Hello, Welcome to my TypeScript journey!
+console.log(typeof greet); //will print function
+
+// In javascript we can store multiple values in a single data type
+
+let x;
+console.log(typeof x); //will print undefined
+console.log(x); //will print undefined
+x = 10;
+console.log(typeof x); //will print number
+console.log(x); //will print 10
+x = "Mujaddid";
+console.log(typeof x);  //will print string
+console.log(x); //will print Mujaddid
