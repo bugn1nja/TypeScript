@@ -1,6 +1,6 @@
 console.log("Welcome to Temperature Converter");
 
-let celsius = prompt("Enter temperature in Celsius: ");
+let celsius =18; // prompt("Enter temperature in Celsius: ");
 
 function ctof(celsius) {
     return fahrenheit = (celsius * 9/5) + 32;
