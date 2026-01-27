@@ -81,3 +81,7 @@ console.log("Sorted marks: " + marks_array);
 // reverse() - reverses the order of elements in the array
 marks_array.reverse();
 console.log("Reversed marks: " + marks_array);
+
+// slice() - returns a portion of the array
+let top_three_marks = marks_array.slice(0, 3);
+console.log("Top three marks: " + top_three_marks);
