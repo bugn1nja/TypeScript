@@ -32,3 +32,52 @@ console.log("Mark of student 3 is: " + marks_array[2]);
 
 marks_array[4] = 92; // updating value at index 4
 console.log("Updated mark of student 5 is: " + marks_array[4]);
+
+
+// Methods in arrays
+
+// push() - adds an element to the end of the array
+marks_array.push(100);
+console.log("After push: " + marks_array);
+
+// pop() - removes the last element from the array
+marks_array.pop();
+console.log("After pop: " + marks_array);
+
+// shift() - removes the first element from the array
+marks_array.shift();
+console.log("After shift: " + marks_array);
+
+// unshift() - adds an element to the beginning of the array
+marks_array.unshift(99);
+console.log("After unshift: " + marks_array);
+
+// reduce() - sums up all elements in the array
+let total_marks = marks_array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log("Total marks: " + total_marks);     
+
+// forEach() - iterates over each element in the array
+console.log("Marks of all students:");  
+marks_array.forEach((mark, index) => {
+    console.log("Student " + (index + 1) + ": " + mark);
+});
+
+// map() - creates a new array by applying a function to each element
+let curved_marks = marks_array.map(mark => mark + 5);
+console.log("Curved marks: " + curved_marks);   
+
+// filter() - creates a new array with elements that pass a test
+let passed_students = marks_array.filter(mark => mark >= 90);
+console.log("Passed students' marks: " + passed_students);
+
+// find() - returns the first element that passes a test
+let first_failing_mark = marks_array.find(mark => mark < 60);
+console.log("First failing mark: " + first_failing_mark);
+
+// sort() - sorts the elements in the array
+marks_array.sort((a, b) => a - b);
+console.log("Sorted marks: " + marks_array);
+
+// reverse() - reverses the order of elements in the array
+marks_array.reverse();
+console.log("Reversed marks: " + marks_array);
