@@ -78,3 +78,15 @@ console.log(addNum(3, 7)); // Output: 10
 const square = n => n * n; // single parameter doesn't need parentheses
 
 console.log(square(4)); // Output: 16
+
+// Arrow function with no parameters
+let getCurrentTime = () => new Date().toLocaleTimeString();
+console.log(getCurrentTime()); // Output: current time in HH:MM:SS format
+
+// arrow function with multiple statements
+const factorial = n => {
+    let result = 1; 
+}
+
+console.log(factorial(5)); // Output: 120
+
