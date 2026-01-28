@@ -72,3 +72,9 @@ sayHello(); // Output: Hello!
 const addNum = (x, y) => x + y;
 
 console.log(addNum(3, 7)); // Output: 10
+
+
+// Arrow function
+const square = n => n * n; // single parameter doesn't need parentheses
+
+console.log(square(4)); // Output: 16
