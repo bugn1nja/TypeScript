@@ -85,8 +85,16 @@ console.log(getCurrentTime()); // Output: current time in HH:MM:SS format
 
 // arrow function with multiple statements
 const factorial = n => {
-    let result = 1; 
+    let result = 1;
+    
 }
 
 console.log(factorial(5)); // Output: 120
+
+// IIFE - Immediately Invoked Function Expression
+// A function that runs as soon as it is defined.   
+
+(function() {
+    console.log("This function runs immediately upon definition!");
+})();
 
