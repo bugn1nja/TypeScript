@@ -33,6 +33,14 @@
 // }
 // // In this example, the program checks the score and prints the corresponding grade.
 
+// 4. foreach statement
+const fruits = ["apple", "banana", "cherry"];
+fruits.forEach(function(fruit) {
+    console.log(fruit);
+});
+// In this example, the program iterates over each fruit in the fruits array and prints it to the console. 
+
+
 // // 4. switch statement
 const day = prompt("Enter a number (1-7) for the day of the week:");
 switch (day) {
@@ -61,3 +69,4 @@ switch (day) {
         console.log("Weekend");
 }
 // // In this example, the program checks the value of day and prints the corresponding day of the week.
+// // If the input does not match any case, it will print "Weekend".
