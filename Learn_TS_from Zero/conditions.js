@@ -5,32 +5,32 @@
 // // There are several types of conditional statements in JavaScript:
 
 // // 1. if statement
-// let age = 18; 
-// if (age >= 18) {
-//     console.log("You are an adult.");
-// }
+let age = 18; 
+if (age >= 18) {
+    console.log("You are an adult.");
+}
 // // In this example, if the age is 18 or older, it will print "You are an adult."
 
 // // 2. if...else statement
-// let time = 10;
-// if (time < 12) {
-//     console.log("Good morning!");
-// } else {
-//     console.log("Good afternoon!");
-// }
+let time = 10;
+if (time < 12) {
+    console.log("Good morning!");
+} else {
+    console.log("Good afternoon!");
+}
 // // In this example, if the time is before 12, it will print "Good morning!", otherwise it will print "Good afternoon!"
 
 // // 3. else if statement
-// let score = 85;
-// if (score >= 90) {
-//     console.log("Grade: A");
-// } else if (score >= 80) {
-//     console.log("Grade: B");
-// } else if (score >= 70) {
-//     console.log("Grade: C");
-// } else {
-//     console.log("Grade: D");
-// }
+let score = 85;
+if (score >= 90) {
+    console.log("Grade: A");
+} else if (score >= 80) {
+    console.log("Grade: B");
+} else if (score >= 70) {
+    console.log("Grade: C");
+} else {
+    console.log("Grade: D");
+}
 // // In this example, the program checks the score and prints the corresponding grade.
 
 // 4. foreach statement
