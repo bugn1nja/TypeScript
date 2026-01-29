@@ -85,3 +85,9 @@ console.log("Reversed marks: " + marks_array);
 // slice() - returns a portion of the array
 let top_three_marks = marks_array.slice(0, 3);
 console.log("Top three marks: " + top_three_marks);
+
+// splice() - adds/removes elements from the array
+marks_array.splice(2, 1, 95);  
+console.log("After splice: " + marks_array);
+
+// Conclusion: Arrays are powerful data structures in JavaScript that allow you to store and manipulate collections of data efficiently.
