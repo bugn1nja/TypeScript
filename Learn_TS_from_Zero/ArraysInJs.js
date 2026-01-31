@@ -8,89 +8,35 @@ let mark_student3 = 76;
 let mark_student4 = 88;
 let mark_student5 = 90;
 
-// using objects to store multiple values
-let marks = {
-    std1 : 95,
-    std2 : 85,
-    std3 : 76,
-    std4 : 88,
-    std5 : 90
-};  
+
 
 // using arrays to store multiple values
 
-let marks_array = [95, 85, 76, 88, 90];
+let marks = [95, 85, 76, 88, 90];
 
-console.log(marks_array);
+console.log(marks);
 
-console.log(marks_array.length); // length of the array
+// Nested Arrays
+let nested_array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+console.log(nested_array);
 
-// Accessing elements in the array
+// Array Methods
 
-console.log("Mark of student 1 is: " + marks_array[0]);
-console.log("Mark of student 3 is: " + marks_array[2]);
+// 1. .push() - adds a new element to the end of the array
 
-marks_array[4] = 92; // updating value at index 4
-console.log("Updated mark of student 5 is: " + marks_array[4]);
+marks.push(100);
+console.log("After pushing 100 at the end of the array : ", marks); // Output: [95, 85, 76, 88, 90, 100]
 
 
-// Methods in arrays
 
-// push() - adds an element to the end of the array
-marks_array.push(100);
-console.log("After push: " + marks_array);
 
-// pop() - removes the last element from the array
-marks_array.pop();
-console.log("After pop: " + marks_array);
 
-// shift() - removes the first element from the array
-marks_array.shift();
-console.log("After shift: " + marks_array);
 
-// unshift() - adds an element to the beginning of the array
-marks_array.unshift(99);
-console.log("After unshift: " + marks_array);
 
-// reduce() - sums up all elements in the array
-let total_marks = marks_array.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-console.log("Total marks: " + total_marks);     
 
-// forEach() - iterates over each element in the array
-console.log("Marks of all students:");  
-marks_array.forEach((mark, index) => {
-    console.log("Student " + (index + 1) + ": " + mark);
-});
 
-// map() - creates a new array by applying a function to each element
-let curved_marks = marks_array.map(mark => mark + 5);
-console.log("Curved marks: " + curved_marks);   
 
-// filter() - creates a new array with elements that pass a test
-let passed_students = marks_array.filter(mark => mark >= 90);
-console.log("Passed students' marks: " + passed_students);
 
-// find() - returns the first element that passes a test
-let first_failing_mark = marks_array.find(mark => mark < 60);
-console.log("First failing mark: " + first_failing_mark);
-
-// sort() - sorts the elements in the array
-marks_array.sort((a, b) => a - b);
-console.log("Sorted marks: " + marks_array);
-
-// reverse() - reverses the order of elements in the array
-marks_array.reverse();
-console.log("Reversed marks: " + marks_array);
-
-// slice() - returns a portion of the array
-let top_three_marks = marks_array.slice(0, 3);
-console.log("Top three marks: " + top_three_marks);
-
-// splice() - adds/removes elements from the array
-marks_array.splice(2, 1, 95);  
-console.log("After splice: " + marks_array);
-
-// Conclusion: Arrays are powerful data structures in JavaScript that allow you to store and manipulate collections of data efficiently.
 
 // .toString() - converts the array to a string
 
