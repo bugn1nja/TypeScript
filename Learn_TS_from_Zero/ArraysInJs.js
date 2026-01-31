@@ -91,3 +91,12 @@ marks_array.splice(2, 1, 95);
 console.log("After splice: " + marks_array);
 
 // Conclusion: Arrays are powerful data structures in JavaScript that allow you to store and manipulate collections of data efficiently.
+
+// .toString() - converts the array to a string
+
+let name = ["Mustabin","Mujaddid","Eazana"];
+
+let stringName = name.toString();
+
+console.log(stringName); // Output: Mustabin,Mujaddid,Eazana
+
