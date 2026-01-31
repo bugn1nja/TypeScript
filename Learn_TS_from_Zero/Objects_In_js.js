@@ -21,3 +21,28 @@ console.log("Persons All data is : ", person);
 // Modifying Object Properties
 person.age = 31;
 console.log("After modifying, the age of stored person is : " + person.age)
+
+// let person2 = {
+//     greet: function() {
+//         console.log("Hello!");
+//     }
+// }
+
+// let student = Object.create(person2);
+// student.name = "Alice";
+// student.age = 22;
+
+// // student.greet(); // Output: Hello!
+// console.log(student.greet()); // Output: Hello, Alice!
+
+let person2 = {
+  greet: function() {
+    return `Hello, ${this.name}!`;
+  }
+};
+
+let student = Object.create(person2);
+student.name = "Alice";
+student.age = 22;
+
+console.log(student.greet()); // Hello, Alice!
