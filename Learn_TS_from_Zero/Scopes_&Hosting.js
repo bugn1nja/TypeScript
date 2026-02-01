@@ -65,3 +65,44 @@ console.log(addTwo(5)); // Outputs: 7
 
 
 
+// Lexical Scoping
+
+// Lexical scoping means that the accessibility of variables is determined by the physical structure of the code (i.e., where the variables are declared in the source code).
+function outer() {
+    let outerVar = "I am from outer function";
+    function inner() {
+        console.log(outerVar); // Accessible here due to lexical scope
+    }
+    inner();
+}
+outer();
+
+// Example of lexical scoping with nested functions
+
+function outerFunction() {
+    let outerVariable = "I am from outer function too";
+    function innerFunction() {
+        let innerVariable = "I am from inner function";
+        console.log(outerVariable); // Accessible due to lexical scope
+        console.log(innerVariable); // Accessible here
+    }
+    innerFunction();
+}
+outerFunction();
+
+// Closures
+
+// A closure is a function that retains access to its lexical scope even when the function is executed outside that scope.
+
+function makeCounter() {
+    let count = 0;
+    return function() {
+        count++;
+        return count;
+    }
+}
+
+let counter = makeCounter();
+console.log(counter()); // Output: 1
+console.log(counter()); // Output: 2
+console.log(counter()); // Output: 3
