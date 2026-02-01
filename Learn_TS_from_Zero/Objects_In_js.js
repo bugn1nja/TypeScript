@@ -178,3 +178,5 @@ let isProto = Object.isPrototypeOf(animal, dog);
 console.log("Is animal prototype of dog? : ", isProto); 
 // Output: true
 
+// This concludes the overview of Objects in JavaScript!
+
