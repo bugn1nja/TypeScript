@@ -180,3 +180,4 @@ console.log("Is animal prototype of dog? : ", isProto);
 
 // This concludes the overview of Objects in JavaScript!
 
+// Objects are fundamental to JavaScript and understanding them is crucial for effective programming in the language.
