@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Color Change</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="blue">Blue</button>
+    <button id="green">Green</button>
+    <button id="mint">Mint</button>
+    <button id="softred">Soft Red</button>
+
+    <script>
+        document.getElementById("blue").onclick = function() {
+            document.body.style.backgroundColor = "lightblue";
+        };
+        document.getElementById("green").onclick = function() {
+            document.body.style.backgroundColor = "lightgreen";
+        };
+        document.getElementById("mint").onclick = function() {
+            document.body.style.backgroundColor = "lightseagreen";
+        };
+        document.getElementById("softred").onclick = function() {
+            document.body.style.backgroundColor = "lightcoral";
+        };
+    </script>
+</body>
+</html>
