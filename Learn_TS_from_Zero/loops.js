@@ -50,3 +50,22 @@ for (let fruit of fruits) {
 }
 // in this example, the loop will iterate over each element in the fruits array.
 // we use the for...of loop to access each element directly.
+
+// foreach loop
+fruits.forEach(function(fruit, index) {
+    console.log("Foreach Loop iteration:", index, fruit);
+});
+// in this example, we use the forEach method to iterate over each element in the fruits array.
+// the callback function takes two arguments: the current element (fruit) and its index in the array.
+// we print both the index and the fruit in each iteration.
+// Note: The forEach method is not a traditional loop, but it provides a convenient way to iterate over arrays in JavaScript.
+// This concludes the overview of loops in JavaScript!
+
+fruits.forEach((fruit, index) => {
+    console.log("Foreach Loop with Arrow Function iteration:", index, fruit);
+});
+// in this example, we use the forEach method with an arrow function to iterate over each element in the fruits array.
+// the arrow function takes two arguments: the current element (fruit) and its index in the array.
+// we print both the index and the fruit in each iteration.
+
+console.log(fruite)
