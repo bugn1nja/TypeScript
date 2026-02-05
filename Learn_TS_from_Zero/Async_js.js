@@ -17,4 +17,6 @@ function creatuser(username, mail, password) {
 
 console.log(new creatuser("Mujaddid", "mujaddid@fb.com", "12345"));
 
+// Promises
+
 
