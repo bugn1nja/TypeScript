@@ -1,22 +1,14 @@
-// Async JavaScript
-
-// Asynchronous JavaScript allows you to perform tasks without blocking the main thread, enabling smoother user experiences. Here are some common ways to handle asynchronous operations in JavaScript:
-
-// call
-
-function setUsername(username) {
-    // DB call simulation
-    this.username = username;
+function hello() {
+    console.log("Hello World");
 }
 
-function creatuser(username, mail, password) {
-    setUsername(username);
-    this.mail = mail;
-    this.password = password;
-}
+setTimeout(hello, 2000); // 2 seconds later, it will print "Hello World"
 
-console.log(new creatuser("Mujaddid", "mujaddid@fb.com", "12345"));
+console.log("This will print first"); // This will print before "Hello World" because setTimeout is asynchronous
 
-// Promises
+setTimeout(() => {
+    console.log("This will print 5 seconds after the first message");
+}, 5000); // This will print after 5 seconds
 
+console.log("Mujaddid")
 
