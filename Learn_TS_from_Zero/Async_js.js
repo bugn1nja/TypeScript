@@ -28,7 +28,7 @@ let Data_2 = "Password is correct!";
 function asyncFunctoin() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            console.log("Data_1 : " + Data_1);
+            console.log(">> " + Data_1);
             resolve("Data_1 is resolved successfully!");
         }, 3000);
     });
@@ -37,7 +37,7 @@ function asyncFunctoin() {
 function asyncFunctoin2() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            console.log("Data_2 : " + Data_2);
+            console.log(">> " + Data_2);
             resolve("Data_2 is resolved successfully!");
         }, 3000);
     });
