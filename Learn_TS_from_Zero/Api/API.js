@@ -40,7 +40,7 @@ async function GetBitcoinPrice() {
     try {
         const result = await fetch(url3);
         const data = await result.json();
-        if (Response.status !== 200) {
+        if (result.status !== 200) {
             console.log("Bitcoin Price in Bangladeshi Taka : ", data.data.amount);
         }
         else {
