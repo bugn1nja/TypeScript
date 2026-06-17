@@ -10,13 +10,13 @@
 // This is api result for Bitcoin Price in USD
  const url = "https://api.coinbase.com/v2/prices/BTC-USD/spot";
 
-async function getBItcoinPrice() {
+async function getBitcoinPrice() {
    const result = await fetch(url);
    const data = await result.json(); 
    console.log("Bitcoin Price in South Korean Won : ₩",data.data.amount/0.00066);
 }
 
-getBItcoinPrice(); 
+getBitcoinPrice(); 
 
 // This is api result for Live Time in Seoul, South Korea
 
@@ -29,3 +29,28 @@ async function getTime() {
 }
 
 getTime();
+
+
+// Try & Catch
+// The try...catch statement is used to handle exceptions in JavaScript. It allows you to test a block of code for errors and handle them gracefully without crashing the program.
+
+const url3 = "https://api.coinbase.com/v2/prices/BTC-BDT/spot";
+
+async function GetBitcoinPrice() {
+    try {
+        const result = await fetch(url3);
+        const data = await result.json();
+        if (Response.status !== 200) {
+            console.log("Bitcoin Price in Bangladeshi Taka : ", data.data.amount);
+        }
+        else {
+            console.log("Server Error: ", data);
+        }
+    }
+    catch (error) {
+        console.log("Network Error: ", error);
+    }
+
+}
+
+GetBitcoinPrice();
