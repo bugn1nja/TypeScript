@@ -1,0 +1,11 @@
+// Api in JavaScript
+// API stand for Application Programming Interface. It is a set of rules and protocols for building and interacting with software applications. An API defines the methods and data structures that developers can use to interact with the software component, whether it's a web service, library, or operating system.
+
+// Fatching Api Syntax
+// The fetch() method is used to make HTTP requests to a server and retrieve data. It returns a Promise that resolves to the Response object representing the response to the request.
+
+
+const response = await fetch('https://api.example.com/data')
+ // await is use to wait for the Promise returned by fetch() to resolve before proceeding with the next line of code. This allows you to handle the response data once it is available.
+
+ 
