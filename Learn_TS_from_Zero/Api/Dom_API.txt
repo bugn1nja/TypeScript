@@ -100,3 +100,29 @@ myHeading.innerText = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}
 '3:9:32:217'
 myHeading.innerText = `${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}:${now.getMilliseconds()}`
 '3:9:32:217'
+
+
+-------------------------------------------------------------------------
+
+
+// Todo List code
+
+const input = document.createElement('input')
+undefined
+input.placeholder = "Add a new task..!"
+'Add a new task..!'
+document.body.appendChild(input)
+<input placeholder=​"Add a new task..!">​
+const button = document.createElement('button)
+VM3277:1 Uncaught SyntaxError: Invalid or unexpected token
+const button = document.createElement('button')
+undefined
+button.innerText = 'Add'
+'Add'
+document.body.appendChild(button)
+<button>​Add​</button>​
+button.addEventListener('click' , () => {
+    console.log("Button is clicked")
+})
+undefined
+8VM3580:2 Button is clicked
