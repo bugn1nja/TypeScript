@@ -1,2 +1,2 @@
-// This txt file will hold all of my react note from Programming with Mosh
+// This is a text file for React code learn with "Chair aur Code"
 
